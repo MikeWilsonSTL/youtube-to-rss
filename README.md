@@ -16,7 +16,7 @@ This was inspired by David Hariri's wonderful blog post: [YouTube Subscriptions 
 - Make sure you're logged into YouTube and go to [`https://www.youtube.com/feed/channels`](https://www.youtube.com/feed/channels)
 - Open Developer View with `F12` or `Ctrl + Shift + C`
 - In the pane that opens, find and click the `Console` tab
-- Copy the javascript code from [here](https://github.com/MikeWilsonSTL/youtube-to-rss/blob/main/youtube-to-rss.js)
+- Copy the javascript code from [`here`](https://github.com/MikeWilsonSTL/youtube-to-rss/blob/main/youtube-to-rss.js)
 - Find the input field (where you can type freely), paste the javascript, and hit `Enter`:
 
 Once you hit enter, follow the prompts and you'll be prompted to download a file called subscriptions.opml
