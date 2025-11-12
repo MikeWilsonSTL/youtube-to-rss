@@ -1,4 +1,4 @@
-// Escape xml safely
+// escape xml safely
 function xmlEscape(str) {
   return str.replace(/&/g, "&amp;")
             .replace(/</g, "&lt;")
@@ -44,7 +44,7 @@ if (uniqueChannels.length === 0) {
 // ask whether to include invidious feeds
 const includeInvidious = confirm("Would you like to include Invidious feeds as well?");
 
-// Initialize invidiousBase (optional)
+// initialize invidiousBase (optional)
 let invidiousBase = null;
 
 if (includeInvidious) {
