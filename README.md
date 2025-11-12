@@ -19,7 +19,7 @@ This was inspired by David Hariri's wonderful blog post: [YouTube Subscriptions 
 - Copy the javascript code from [`here`](https://github.com/MikeWilsonSTL/youtube-to-rss/blob/main/youtube-to-rss.js)
 - Find the input field (where you can type freely), paste the javascript, and hit `Enter`
 
-Once you hit enter, follow the prompts and you'll be prompted to download a file called subscriptions.opml
+Once you hit enter, follow the prompts and you'll be prompted to download a file called `subscriptions.opml`
 
 This is the file that contains all of your YouTube/Invidious subscription data. You can take this file and import it into your RSS reader of choice.
 
