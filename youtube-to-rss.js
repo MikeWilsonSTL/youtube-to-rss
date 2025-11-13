@@ -48,10 +48,7 @@ const includeInvidious = confirm("Would you like to include Invidious feeds as w
 let invidiousBase = null;
 
 if (includeInvidious) {
-    invidiousBase = prompt(
-        "Enter your Invidious instance URL (e.g. https://inv.example.com):"
-
-    );
+    invidiousBase = prompt("Enter your Invidious instance URL (e.g. https://inv.example.com):");
     if (invidiousBase) {
         invidiousBase = invidiousBase.trim().replace(/\/+$/, "");
     } else {
