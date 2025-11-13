@@ -6,8 +6,9 @@ This was inspired by David Hariri's wonderful blog post: [YouTube Subscriptions 
 ## Features
 
 - Dynamically converts your entire YouTube subscription base to OPML for easy RSS imports
-- Allows you to choose an Invidious frontend if you prefer to use that instead
 - Runs completely client side; no data is sent anywhere
+- Allows you to choose an Invidious frontend if you prefer to use that instead
+- Adds an explicit "title" field to each channel so each RSS feed presents as the proper channel name instead of something like `UCl2mFZoRqjw_ELax4Yisf6w`
 
 ## How to Use
 
@@ -23,4 +24,12 @@ Once you hit enter, follow the prompts and you'll be prompted to download a file
 
 This is the file that contains all of your YouTube/Invidious subscription data. You can take this file and import it into your RSS reader of choice.
 
-It *should* work with most RSS readers but I've only tested it on a few myself. 
+It *should* work with most RSS readers but I've only tested it on a few myself.
+
+Specifically, I've confirmed that the .opml file imports cleanly into these RSS readers:
+
+ - Android
+   - [Feeder](https://github.com/spacecowboy/Feeder)
+  
+ - Windows
+   - [Fluent Reader](https://github.com/yang991178/fluent-reader)
