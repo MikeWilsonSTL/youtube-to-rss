@@ -6,7 +6,7 @@ function xmlEscape(str) {
             .replace(/"/g, "&quot;");
 }
 
-// recursively extract channels from youtube's json
+// extract channels from youtube's json
 function extractChannels(obj) {
   const results = [];
   function walk(node) {
@@ -23,7 +23,7 @@ function extractChannels(obj) {
   return results;
 }
 
-// main
+// main exit point. if !ytInitialData, the whole script is moot
 let data;
 try {
   data = ytInitialData;
@@ -56,7 +56,7 @@ if (includeInvidious) {
     }
 }
 
-// build youtube outlines
+// build youtube channels
 const ytOutlines = uniqueChannels.map(({ channelId, title }) => {
   const escaped = xmlEscape(title);
   return `      <outline text="${escaped}" title="${escaped}" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}" />`;
@@ -64,7 +64,7 @@ const ytOutlines = uniqueChannels.map(({ channelId, title }) => {
 
 let invidiousSection = "";
 
-// optionally build invidious outlines
+// optionally build invidious channels
 if (includeInvidious && invidiousBase) {
   const invOutlines = uniqueChannels.map(({ channelId, title }) => {
     const escaped = xmlEscape(title);
@@ -74,7 +74,7 @@ if (includeInvidious && invidiousBase) {
   invidiousSection = `\n    <outline text="Invidious" title="Invidious">\n${invOutlines}\n    </outline>`;
 }
 
-// build opml with folder structure
+// build opml with nested structure
 const opmlData = `<?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
   <head>
@@ -95,3 +95,4 @@ a.download = "subscriptions.opml";
 a.click();
 
 console.log(`Exported ${uniqueChannels.length} YouTube subscriptions${includeInvidious ? ` + Invidious (${invidiousBase})` : ""}`);
+console.log(`We out here 💯`)
