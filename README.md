@@ -15,6 +15,7 @@ This was inspired by David Hariri's wonderful blog post: [YouTube Subscriptions 
 **NOTE**: This works by opening the developer view in your browser and copy pasting javascript code into the console. You should ***never*** do this without understanding what the code you're pasting does. Failing to do so could result in [severe consequences](https://www.bleepingcomputer.com/news/security/dont-copy-paste-commands-from-webpages-you-can-get-hacked/).
 
 - Make sure you're logged into YouTube and go to [`https://www.youtube.com/feed/channels`](https://www.youtube.com/feed/channels)
+  - Make sure you go to youtube.com/feed/**channels** specifically. Make sure you don't end up at youtube.com/feed/subscriptions. This script will not work there.
 - Open Developer View with `F12` or `Ctrl + Shift + C`
 - In the pane that opens, find and click the `Console` tab
 - Copy the javascript code from [`here`](https://github.com/MikeWilsonSTL/youtube-to-rss/blob/main/youtube-to-rss.js)
