@@ -1,5 +1,7 @@
 # youtube-to-rss
 
+![clippy-banner](https://github.com/user-attachments/assets/b0082c69-8920-4555-aebe-0278830f862e)
+
 A tool to automatically pull all YouTube subscriptions and convert them into an RSS-readable OPML format.
 
 This was inspired by David Hariri's wonderful blog post: [YouTube Subscriptions via RSS](https://dhariri.com/2023/youtube-sub-download.html)
