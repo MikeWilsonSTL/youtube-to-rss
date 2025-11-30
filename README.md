@@ -1,6 +1,6 @@
 # youtube-to-rss
 
-A tool to automatically pull all YouTube subscriptions and convert them into an RSS-readable OPML format with the option to also include Invidious instances.
+A tool to automatically pull all YouTube subscriptions and convert them into an RSS-readable OPML format.
 
 This was inspired by David Hariri's wonderful blog post: [YouTube Subscriptions via RSS](https://dhariri.com/2023/youtube-sub-download.html)
 ## Features
@@ -8,7 +8,6 @@ This was inspired by David Hariri's wonderful blog post: [YouTube Subscriptions 
 - Dynamically converts your entire YouTube subscription base to OPML for easy RSS imports
 - Runs completely client side; no data is sent anywhere
 - Allows you to choose an Invidious frontend if you prefer to use that instead
-- Adds an explicit "title" field to each channel so each RSS feed presents as the proper channel name instead of something like `UCl2mFZoRqjw_ELax4Yisf6w`
 
 ## How to Use
 
@@ -24,7 +23,7 @@ This was inspired by David Hariri's wonderful blog post: [YouTube Subscriptions 
 
 Once you hit enter, follow the prompts and you'll be prompted to download a file called `subscriptions.opml`
 
-This is the file that contains all of your YouTube/Invidious subscription data. You can take this file and import it into your RSS reader of choice.
+This is the file that contains all of your YouTube or Invidious subscription data. You can take this file and import it into your RSS reader of choice.
 
 It *should* work with most RSS readers but I've only tested it on a few myself.
 
