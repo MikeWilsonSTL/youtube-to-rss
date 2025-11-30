@@ -27,10 +27,13 @@ This is the file that contains all of your YouTube or Invidious subscription dat
 
 It *should* work with most RSS readers but I've only tested it on a few myself.
 
-Specifically, I've confirmed that the .opml file imports cleanly into FreshRSS as well as these RSS readers:
-
+Specifically, I've confirmed that the .opml file imports cleanly into FreshRSS and these RSS readers:
+     
  - Android
-   - [Feeder](https://github.com/spacecowboy/Feeder)
+   - [Feeder](https://github.com/spacecowboy/Feeder)(Local OPML only)
+   - [Read You](https://github.com/ReadYouApp/ReadYou)(Local or FreshRSS)
+   - [Readrops](https://github.com/readrops/Readrops)(FreshRSS)
+   - [Capy Reader](https://github.com/jocmp/capyreader)(FreshRSS)
   
  - Windows
-   - [Fluent Reader](https://github.com/yang991178/fluent-reader)
+   - [Fluent Reader](https://github.com/yang991178/fluent-reader)(Local or FreshRSS)
