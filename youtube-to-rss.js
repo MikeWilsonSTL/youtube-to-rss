@@ -81,7 +81,7 @@ const opmlData = `<?xml version="1.0" encoding="UTF-8"?>
     <title>Subscriptions</title>
   </head>
   <body>
-    <outline text="YouTube" title="YouYube">
+    <outline text="YouTube" title="YouTube">
 ${ytOutlines}
     </outline>${invidiousSection}
   </body>
